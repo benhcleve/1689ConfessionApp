@@ -12,7 +12,8 @@ export default class Screen extends React.Component {
           </TouchableOpacity>
           <ScrollView>
             <View style={{ flex: 1, alignItems: "center", justifyContent: "flex-start" }}>
-              <Text style={styles.text}>{this.props.name}</Text>
+              <Text style={styles.header}>{this.props.name}</Text>
+              {this.props.body}
             </View>
           </ScrollView>
         </SafeAreaView>
@@ -25,6 +26,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#FFF",
+  },
+  header: {
+    color: "#161924",
+    fontSize: 30,
+    fontWeight: "500",
   },
   text: {
     color: "#161924",
