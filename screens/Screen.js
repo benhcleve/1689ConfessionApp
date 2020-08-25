@@ -1,17 +1,21 @@
 import React from "react";
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { color } from "react-native-reanimated";
 
 export default class Screen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <SafeAreaView style={{ flex: 1 }}>
-          <TouchableOpacity style={{ alignItems: "flex-end", margin: 16 }} onPress={this.props.navigation.openDrawer}>
-            <FontAwesome5 name="bars" size={24} color="#161924" />
-          </TouchableOpacity>
+      <View style={{ flex: 1 }}>
+        <SafeAreaView style={{ backgroundColor: "#192436" }}>
+          <View style={{ flexDirection: "row", justifyContent: "flex-end", alignItems: "stetch", backgroundColor: "#192436" }}>
+            <Text style={{ alignSelf: "center", backgroundColor: "#192436", color: "#ffffff", fontSize: 20 }}>1689 London Baptist Confession</Text>
+            <TouchableOpacity style={{ margin: 16 }}>
+              <FontAwesome5 style={{ alignSelf: "flex-end" }} name="bars" size={36} color="#AEAEB0" onPress={this.props.navigation.openDrawer} />
+            </TouchableOpacity>
+          </View>
           <ScrollView>
-            <View style={{ flex: 1, alignItems: "center", justifyContent: "flex-start" }}>{this.props.body}</View>
+            <View style={{ flex: 1, alignItems: "center" }}>{this.props.body}</View>
           </ScrollView>
         </SafeAreaView>
       </View>

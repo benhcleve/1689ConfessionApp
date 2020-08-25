@@ -1,23 +1,32 @@
 import "react-native-gesture-handler";
 import React from "react";
-import { Button, View, Text, ScrollView } from "react-native";
-import { createDrawerNavigator, useIsDrawerOpen } from "@react-navigation/drawer";
+import { View } from "react-native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
-
-import { Feather } from "@expo/vector-icons";
+import { createStackNavigator } from "@react-navigation/stack";
 
 import { ChapterOne, ChapterTwo, ChapterThree } from "./screens";
+import { color } from "react-native-reanimated";
 
 const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
 
-export default function App() {
+function DrawerUI() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Chapter 1" component={ChapterOne} />
+      <Drawer.Navigator initialRouteName="Home" drawerType={"front"} drawerStyle={{ width: "50%" }}>
+        <Drawer.Screen name="Chapter 1" component={ChapterOne} options={{}} />
         <Drawer.Screen name="Chapter 2" component={ChapterTwo} />
         <Drawer.Screen name="Chapter 3" component={ChapterThree} />
       </Drawer.Navigator>
     </NavigationContainer>
+  );
+}
+
+export default function App() {
+  return (
+    <View style={{ flex: 1 }}>
+      <DrawerUI />
+    </View>
   );
 }
