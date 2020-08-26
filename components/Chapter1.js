@@ -12,6 +12,11 @@ export const ChapterOneBody = () => {
       <SectionThree />
       <SectionFour />
       <SectionFive />
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <SectionNine />
+      <SectionTen />
       <Text>{"\n\n\n\n"}</Text>
     </View>
   );
@@ -90,6 +95,81 @@ const SectionFive = () => {
       <BibleVerse verse={"John 16:13,14"} link={"https://biblia.com/bible/esv/John/16/13-14"} />
       <BibleVerse verse={"1 Corinthians 2:10-12"} link={"https://biblia.com/bible/esv/1Corinthians/2/10-12"} />
       <BibleVerse verse={"1 John 2:20, 27"} link={"https://biblia.com/bible/esv/1John/2/20-27"} />
+      {"\n"}
+    </Text>
+  );
+};
+
+const SectionSix = () => {
+  return (
+    <Text style={styles.text}>
+      <Text style={styles.sectionNum}> {Section6.sectionNumber} </Text>
+      {Section6.body}
+      {"\n"}
+      <BibleVerse verse={"2 Timothy 3:15-17"} link={"https://biblia.com/bible/esv/2Timothy/3/15-17"} />
+      <BibleVerse verse={"Galatians 1:8,9"} link={"https://biblia.com/bible/esv/Galatians/1/8-9"} />
+      <BibleVerse verse={"John 6:45"} link={"https://biblia.com/bible/esv/John/6/45"} />
+      <BibleVerse verse={"1 Corinthians 2:9-12"} link={"https://biblia.com/bible/esv/1Corinthians/2/9-12"} />
+      <BibleVerse verse={"1 Corinthians 11:13"} link={"https://biblia.com/bible/esv/1Corinthians/11/13"} />
+      <BibleVerse verse={"1 Corinthians 14:26,40"} link={"https://biblia.com/bible/esv/1Corinthians/14/26-40"} />
+      {"\n"}
+    </Text>
+  );
+};
+
+const SectionSeven = () => {
+  return (
+    <Text style={styles.text}>
+      <Text style={styles.sectionNum}> {Section7.sectionNumber} </Text>
+      {Section7.body}
+      {"\n"}
+      <BibleVerse verse={"2 Peter 3:16"} link={"https://biblia.com/bible/esv/2Peter/3/16"} />
+      <BibleVerse verse={"Psalms 19:7"} link={"https://biblia.com/bible/esv/Psalms/19/7"} />
+      <BibleVerse verse={"Psalms 119:130"} link={"https://biblia.com/bible/esv/Psalms/119/130"} />
+      {"\n"}
+    </Text>
+  );
+};
+
+const SectionEight = () => {
+  return (
+    <Text style={styles.text}>
+      <Text style={styles.sectionNum}> {Section8.sectionNumber} </Text>
+      {Section8.body}
+      {"\n"}
+      <BibleVerse verse={"Romans 3:2"} link={"https://biblia.com/bible/esv/Romans/3/2"} />
+      <BibleVerse verse={"Isaiah 8:20"} link={"https://biblia.com/bible/esv/Isaiah/8/20"} />
+      <BibleVerse verse={"Acts 15:15"} link={"https://biblia.com/bible/esv/Acts/15/15"} />
+      <BibleVerse verse={"John 5:39"} link={"https://biblia.com/bible/esv/John/5/39"} />
+      <BibleVerse verse={"1 Corinthians 14:6, 9, 11, 12, 24, 28"} link={"https://biblia.com/bible/esv/1Corinthians/14/6-28"} />
+      <BibleVerse verse={"Colossians 3:16"} link={"https://biblia.com/bible/esv/Colossians/3/16"} />
+      {"\n"}
+    </Text>
+  );
+};
+
+const SectionNine = () => {
+  return (
+    <Text style={styles.text}>
+      <Text style={styles.sectionNum}> {Section9.sectionNumber} </Text>
+      {Section9.body}
+      {"\n"}
+      <BibleVerse verse={"2 Peter 1:20"} link={"https://biblia.com/bible/esv/2Peter/1/20"} />
+      <BibleVerse verse={"Acts 15:15, 16"} link={"https://biblia.com/bible/esv/Acts/15/15-16"} />
+      {"\n"}
+    </Text>
+  );
+};
+
+const SectionTen = () => {
+  return (
+    <Text style={styles.text}>
+      <Text style={styles.sectionNum}> {Section10.sectionNumber} </Text>
+      {Section10.body}
+      {"\n"}
+      <BibleVerse verse={"Matthew 22:29, 31, 32"} link={"https://biblia.com/bible/esv/Matthew/22/29-32"} />
+      <BibleVerse verse={"Ephesians 2:20"} link={"https://biblia.com/bible/esv/Ephesians/2/20"} />
+      <BibleVerse verse={"Acts 28:23"} link={"https://biblia.com/bible/esv/Acts/28/23"} />
       {"\n"}
     </Text>
   );
