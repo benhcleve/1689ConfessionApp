@@ -1,31 +1,32 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { Section1, Section2, Section3, Section4, Section5, Section6, Section7, Section8, Section9, Section10 } from "./Chapter1Sections";
+import { View, Text, StyleSheet, SectionList, SafeAreaView } from "react-native";
+import { DATA } from "./Chapter1Sections";
 import { BibleVerse } from "./BibleVerseLink";
+
+const Item = ({ title }) => (
+  <SafeAreaView style={{ flexWrap: "wrap" }}>
+    <Text style={styles.text}>{title}</Text>
+  </SafeAreaView>
+);
 
 export const ChapterOneBody = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Chapter 1: Of The Holy Scriptures </Text>
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <SectionSix />
-      <SectionSeven />
-      <SectionEight />
-      <SectionNine />
-      <SectionTen />
-      <Text>{"\n\n\n\n"}</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <SectionList
+        width="100%"
+        sections={DATA}
+        keyExtractor={(item, index) => item + index}
+        renderItem={({ item }) => <Item title={item} />}
+        renderSectionHeader={({ section: { title } }) => <Text style={styles.header}>{title}</Text>}
+      />
+    </SafeAreaView>
   );
 };
 
 const SectionOne = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section1.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section1.title} </Text>
       {Section1.body}
       {"\n"}
       <BibleVerse verse={"2 Timothy 3:15-17"} link={"https://biblia.com/bible/esv/2timothy/3/15-17"} />
@@ -47,7 +48,7 @@ const SectionOne = () => {
 const SectionTwo = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section2.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section2.title} </Text>
       {Section2.body1} {"\n\n"}
       {Section2.body2} {"\n\n"}
       {Section2.body3}
@@ -61,7 +62,7 @@ const SectionTwo = () => {
 const SectionThree = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section3.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section3.title} </Text>
       {Section3.body}
       {"\n"}
       <BibleVerse verse={"Luke 24:27"} link={"https://biblia.com/bible/esv/Luke/24/27"} />
@@ -74,7 +75,7 @@ const SectionThree = () => {
 const SectionFour = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section4.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section4.title} </Text>
       {Section4.body}
       {"\n"}
       <BibleVerse verse={"2 Peter 1:19-21"} link={"https://biblia.com/bible/esv/2Peter/1/19-21"} />
@@ -89,7 +90,7 @@ const SectionFour = () => {
 const SectionFive = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section5.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section5.title} </Text>
       {Section5.body}
       {"\n"}
       <BibleVerse verse={"John 16:13,14"} link={"https://biblia.com/bible/esv/John/16/13-14"} />
@@ -103,7 +104,7 @@ const SectionFive = () => {
 const SectionSix = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section6.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section6.title} </Text>
       {Section6.body}
       {"\n"}
       <BibleVerse verse={"2 Timothy 3:15-17"} link={"https://biblia.com/bible/esv/2Timothy/3/15-17"} />
@@ -120,7 +121,7 @@ const SectionSix = () => {
 const SectionSeven = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section7.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section7.title} </Text>
       {Section7.body}
       {"\n"}
       <BibleVerse verse={"2 Peter 3:16"} link={"https://biblia.com/bible/esv/2Peter/3/16"} />
@@ -134,7 +135,7 @@ const SectionSeven = () => {
 const SectionEight = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section8.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section8.title} </Text>
       {Section8.body}
       {"\n"}
       <BibleVerse verse={"Romans 3:2"} link={"https://biblia.com/bible/esv/Romans/3/2"} />
@@ -151,7 +152,7 @@ const SectionEight = () => {
 const SectionNine = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section9.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section9.title} </Text>
       {Section9.body}
       {"\n"}
       <BibleVerse verse={"2 Peter 1:20"} link={"https://biblia.com/bible/esv/2Peter/1/20"} />
@@ -164,7 +165,7 @@ const SectionNine = () => {
 const SectionTen = () => {
   return (
     <Text style={styles.text}>
-      <Text style={styles.sectionNum}> {Section10.sectionNumber} </Text>
+      <Text style={styles.sectionNum}> {Section10.title} </Text>
       {Section10.body}
       {"\n"}
       <BibleVerse verse={"Matthew 22:29, 31, 32"} link={"https://biblia.com/bible/esv/Matthew/22/29-32"} />
@@ -178,7 +179,8 @@ const SectionTen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF",
+    backgroundColor: "#fff",
+    alignItems: "center",
     padding: 20,
   },
   header: {
@@ -190,10 +192,7 @@ const styles = StyleSheet.create({
     color: "#000000",
     fontSize: 16,
     fontWeight: "500",
-  },
-  sectionNum: {
-    color: "#000000",
-    fontSize: 30,
-    fontWeight: "500",
+    width: "100%",
+    paddingHorizontal: 25,
   },
 });

@@ -14,10 +14,8 @@ export default class Screen extends React.Component {
               <FontAwesome5 style={{ alignSelf: "flex-end" }} name="bars" size={36} color="#AEAEB0" onPress={this.props.navigation.openDrawer} />
             </TouchableOpacity>
           </View>
-          <ScrollView>
-            <View style={{ flex: 1, alignItems: "center" }}>{this.props.body}</View>
-          </ScrollView>
         </SafeAreaView>
+        <View style={{ width: "100%", flex: 1 }}>{this.props.body}</View>
       </View>
     );
   }
