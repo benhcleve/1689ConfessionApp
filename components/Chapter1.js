@@ -3,7 +3,15 @@ import { View, Text, StyleSheet, SectionList, SafeAreaView } from "react-native"
 import { DATA } from "./Chapter1Sections";
 import { HeaderTitle } from "@react-navigation/stack";
 
-const Item = ({ title }) => <Text style={styles.text}>{title}</Text>;
+const Item = ({ title }) => (
+  <Text style={styles.text}>
+    <Text>
+      {"\n"}
+      {title}
+      {"\n"}
+    </Text>
+  </Text>
+);
 
 export const ChapterOneBody = () => {
   return (
@@ -15,7 +23,6 @@ export const ChapterOneBody = () => {
         keyExtractor={(item, index) => item + index}
         renderItem={({ item }) => <Item title={item} />}
         renderSectionHeader={({ section: { title } }) => <Text style={styles.header}> Section {title}</Text>}
-        renderSectionFooter={({ section: { verse } }) => <Text style={styles.text}>{verse}</Text>}
       />
     </SafeAreaView>
   );
@@ -30,7 +37,7 @@ const styles = StyleSheet.create({
   },
   header: {
     color: "white",
-    backgroundColor: "lightgray",
+    backgroundColor: "gray",
     width: "100%",
     fontSize: 16,
     fontWeight: "500",
