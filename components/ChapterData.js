@@ -1,8 +1,8 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { Text } from "react-native";
 import { BibleVerse, Excerpt } from "./BookFormat";
 
-export const DATA = [
+export const ChapterOneData = [
   {
     title: 1,
     data: [
@@ -37,13 +37,27 @@ export const DATA = [
   {
     title: 2,
     data: [
-      <Excerpt
-        body="    Under the name of Holy Scripture, or the Word of God written, are now contained all the books of the Old and New Testaments, which are these:
+      <Text>
+        <Excerpt
+          body="    Under the name of Holy Scripture, or the Word of God written, are now contained all the books of the Old and New Testaments, which are these:
+        "
+        />
+        <Excerpt
+          body="
           Of the Old Testament: Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, I Samuel, II Samuel, I Kings, II Kings, I Chronicles, II Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, The Song of Solomen, Isaiah, Jeremiah, Lamentations,Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi
+          "
+        />
+        <Excerpt
+          body="
           Of the New Testament: Matthew, Mark, Luke, John, The Acts of the Apostles, Paul's Epistle to the Romans, I Corinthians, II Corinthians, Galatians, Ephesians, Philippians, Colossians, I Thessalonians, II Thessalonians, I Timothy, II Timothy, To Titus, To Philemon, The Epistle to the Hebrews, Epistle of James, The first and second Epistles of Peter, The first, second, and third Epistles of John, The Epistle of Jude, The Revelation
+          "
+        />
+        <Excerpt
+          body=" 
           All of which are given by the inspiration of God, to be the rule of faith and life."
-        verseRef={5}
-      />,
+          verseRef={5}
+        />
+      </Text>,
       <Text>
         <BibleVerse verse={"2 Timothy 3:16"} verseRef={5} link={"https://biblia.com/bible/esv/2timothy/3/16"} />
       </Text>,
@@ -199,6 +213,60 @@ export const DATA = [
         <BibleVerse verse={"Matthew 22:29, 31, 32"} verseRef={21} link={"https://biblia.com/bible/esv/Matthew/22/29-32"} />
         <BibleVerse verse={"Ephesians 2:20"} verseRef={21} link={"https://biblia.com/bible/esv/Ephesians/2/20"} />
         <BibleVerse verse={"Acts 28:23"} verseRef={21} link={"https://biblia.com/bible/esv/Acts/28/23"} />
+      </Text>,
+    ],
+  },
+];
+
+export const ChapterTwoData = [
+  {
+    title: 1,
+    data: [
+      <Text>
+        <Excerpt body="The Lord our God is but one only living and true God;" verseRef={1} />
+        <Excerpt body=" whose subsistence is in and of Himself," verseRef={2} />
+        <Excerpt body=" infinite in being and perfection; whose essence cannot be comprehended by any but Himself;" verseRef={3} />
+        <Excerpt body=" invisible, without body, parts, or passions, who only hath immortality, dwelling in the light which no man can approach unto;" verseRef={5} />
+        <Excerpt body=" who is immutable," verseRef={6} />
+        <Excerpt body=" immense," verseRef={7} />
+        <Excerpt body=" eternal," verseRef={8} />
+        <Excerpt body=" incomprehensible, almighty," verseRef={9} />
+        <Excerpt body=" every way infinite, most holy," verseRef={10} />
+        <Excerpt body=" most wise, most free, most absolute; working all things according to the counsel of His own immutable and most righteous will," verseRef={11} />
+        <Excerpt body=" for His own glory;" verseRef={12} />
+        <Excerpt
+          body=" most loving, gracious, merciful, long-suffering, abundant in goodness and truth, forgiving iniquity, transgression, and sin; the rewarder of them that diligently seek Him,"
+          verseRef={13}
+        />
+        <Excerpt body=" and withal most just and terrible in His judgments," verseRef={14} />
+        <Excerpt body=" hating all sin," verseRef={15} />
+        <Excerpt body=" and who will by no means clear the guilty." verseRef={16} />
+      </Text>,
+      <Text>
+        <BibleVerse verse={"1 Corinthians 8:4,6"} verseRef={1} link={"https://biblia.com/bible/esv/1Corinthians/8/4-6"} />
+        <BibleVerse verse={"Deuteronomy 6:4"} verseRef={1} link={"https://biblia.com/bible/esv/Deuteronomy/6/4"} />
+        <BibleVerse verse={"Jeremiah 10:10"} verseRef={2} link={"https://biblia.com/bible/esv/Jeremiah/10/10"} />
+        <BibleVerse verse={"Isaiah 48:12"} verseRef={2} link={"https://biblia.com/bible/esv/Isaiah/48/12"} />
+        <BibleVerse verse={"Exodus 3:14"} verseRef={3} link={"https://biblia.com/bible/esv/Exodus/3/14"} />
+        <BibleVerse verse={"John 4:24"} verseRef={4} link={"https://biblia.com/bible/esv/John/4/24"} />
+        <BibleVerse verse={"1 Timothy 1:17"} verseRef={5} link={"https://biblia.com/bible/esv/1Timothy/1/17"} />
+        <BibleVerse verse={"Deuteronomy 4:15,16"} verseRef={5} link={"https://biblia.com/bible/esv/Deuteronomy/4/15-16"} />
+        <BibleVerse verse={"Malachi 3:6"} verseRef={6} link={"https://biblia.com/bible/esv/Malachi/3/6"} />
+        <BibleVerse verse={"1 Kings 8:27"} verseRef={7} link={"https://biblia.com/bible/esv/1Kings/8/27"} />
+        <BibleVerse verse={"Jeremiah 23:23"} verseRef={7} link={"https://biblia.com/bible/esv/Jeremiah/23/23"} />
+        <BibleVerse verse={"Psalms 90:2"} verseRef={8} link={"https://biblia.com/bible/esv/Psalms/90/2"} />
+        <BibleVerse verse={"Genesis 17:1"} verseRef={9} link={"https://biblia.com/bible/esv/Genesis/17/1"} />
+        <BibleVerse verse={"Isaiah 6:3"} verseRef={10} link={"https://biblia.com/bible/esv/Isaiah/6/3"} />
+        <BibleVerse verse={"Psalms 115:3"} verseRef={11} link={"https://biblia.com/bible/esv/Psalms/115/3"} />
+        <BibleVerse verse={"Isaiah 46:10"} verseRef={11} link={"https://biblia.com/bible/esv/Isaiah/46/10"} />
+        <BibleVerse verse={"Proverbs 16:4"} verseRef={12} link={"https://biblia.com/bible/esv/Proverbs/16/4"} />
+        <BibleVerse verse={"Romans 11:36"} verseRef={12} link={"https://biblia.com/bible/esv/Romans/11/36"} />
+        <BibleVerse verse={"Exodus 34:6,7"} verseRef={13} link={"https://biblia.com/bible/esv/Exodus/34/6-7"} />
+        <BibleVerse verse={"Hebrews 11:6"} verseRef={13} link={"https://biblia.com/bible/esv/Hebrews/11/6"} />
+        <BibleVerse verse={"Nehemiah 9:32,33"} verseRef={14} link={"https://biblia.com/bible/esv/Nehemiah/9/32-33"} />
+        <BibleVerse verse={"Psalms 5:5"} verseRef={15} link={"https://biblia.com/bible/esv/Psalms/5/5"} />
+        <BibleVerse verse={"Exodus 34:7"} verseRef={16} link={"https://biblia.com/bible/esv/Exodus/34/7"} />
+        <BibleVerse verse={"Nahum 1:2,3"} verseRef={16} link={"https://biblia.com/bible/esv/Nahum/1/2-3"} />
       </Text>,
     ],
   },
