@@ -14,13 +14,7 @@ const Item = ({ title }) => (
 export const ChapterBody = (props) => (
   <SafeAreaView style={styles.container}>
     <Text style={styles.header}>{props.chapterTitle}</Text>
-    <SectionList
-      width="100%"
-      sections={props.data}
-      keyExtractor={(item, index) => item + index}
-      renderItem={({ item }) => <Item title={item} />}
-      renderSectionHeader={({ section: { title } }) => <Text style={styles.header}> Section {title}</Text>}
-    />
+    <SectionList width="100%" sections={props.data} keyExtractor={(item, index) => item + index} renderItem={({ item }) => <Item title={item} />} renderSectionHeader={({ section: { title } }) => <Text style={styles.header}> Section {title}</Text>} />
   </SafeAreaView>
 );
 

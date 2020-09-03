@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView } fr
 import { FontAwesome5 } from "@expo/vector-icons";
 import { color } from "react-native-reanimated";
 
-export default class Screen extends React.Component {
+export default class BookScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
