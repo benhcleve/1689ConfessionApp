@@ -8,15 +8,9 @@ export const ChapterOneData = [
     data: [
       <Text>
         <Excerpt body="The Holy Scripture is the only sufficient, certain, and infallible rule of all saving knowledge, faith, and obedience," verseRef={1} />
-        <Excerpt
-          body="although the light of nature, and the works of creation and providence do so far manifest the goodness, wisdom, and power of God, as to leave men inexcusable; yet they are not sufficient to give that knowledge of God and His will which is necessary unto salvation."
-          verseRef={2}
-        />
+        <Excerpt body="although the light of nature, and the works of creation and providence do so far manifest the goodness, wisdom, and power of God, as to leave men inexcusable; yet they are not sufficient to give that knowledge of God and His will which is necessary unto salvation." verseRef={2} />
         <Excerpt body="Therefore it pleased the Lord at sundry times and in diversified manners to reveal Himself, and to declare (that) His will unto His church;" verseRef={3} />
-        <Excerpt
-          body="and afterward for the better preserving and propagating of the truth, and for the more sure establishment and comfort of the church against the corruption of the flesh, and the malice of Satan, and of the world, to commit the same wholly unto writing; which makes the Holy Scriptures to be most necessary, those former ways of God's revealing His will unto His people being now completed."
-          verseRef={4}
-        />
+        <Excerpt body="and afterward for the better preserving and propagating of the truth, and for the more sure establishment and comfort of the church against the corruption of the flesh, and the malice of Satan, and of the world, to commit the same wholly unto writing; which makes the Holy Scriptures to be most necessary, those former ways of God's revealing His will unto His people being now completed." verseRef={4} />
       </Text>,
       <Text>
         <BibleVerse verse={"2 Timothy 3:15-17"} verseRef={1} link={"https://biblia.com/bible/esv/2timothy/3/15-17"} />
@@ -69,10 +63,7 @@ export const ChapterOneData = [
   {
     title: 3,
     data: [
-      <Excerpt
-        body="    The books commonly called Apocrypha, not being of divine inspiration, are no part of the canon or rule of the Scripture, and, therefore, are of no authority to the church of God, nor to be any otherwise approved or made use of than other human writings."
-        verseRef={6}
-      />,
+      <Excerpt body="    The books commonly called Apocrypha, not being of divine inspiration, are no part of the canon or rule of the Scripture, and, therefore, are of no authority to the church of God, nor to be any otherwise approved or made use of than other human writings." verseRef={6} />,
       <Text>
         <BibleVerse verse={"Luke 24:27"} verseRef={6} link={"https://biblia.com/bible/esv/Luke/24/27"} />
         <BibleVerse verse={"Romans 3:2"} verseRef={6} link={"https://biblia.com/bible/esv/Romans/3/2"} />
@@ -83,10 +74,7 @@ export const ChapterOneData = [
   {
     title: 4,
     data: [
-      <Excerpt
-        body="    The authority of the Holy Scripture, for which it ought to be believed, dependeth not upon the testimony of any man or church, but wholly upon God (who is truth itself), the author thereof; therefore it is to be received because it is the Word of God."
-        verseRef={7}
-      />,
+      <Excerpt body="    The authority of the Holy Scripture, for which it ought to be believed, dependeth not upon the testimony of any man or church, but wholly upon God (who is truth itself), the author thereof; therefore it is to be received because it is the Word of God." verseRef={7} />,
       <Text>
         <BibleVerse verse={"2 Peter 1:19-21"} verseRef={7} link={"https://biblia.com/bible/esv/2Peter/1/19-21"} />
         <BibleVerse verse={"2 Timothy 3:16"} verseRef={7} link={"https://biblia.com/bible/esv/2Timothy/3/16"} />
@@ -115,18 +103,9 @@ export const ChapterOneData = [
     title: 6,
     data: [
       <Text>
-        <Excerpt
-          body=" The whole counsel of God concerning all things necessary for His own glory, man's salvation, faith and life, is either expressly set down or necessarily contained in the Holy Scripture: unto which nothing at any time is to be added, whether by new revelation of the Spirit, or traditions of men."
-          verseRef={9}
-        />
-        <Excerpt
-          body="Nevertheless, we acknowledge the inward illumination of the Spirit of God to be necessary for the saving understanding of such things as are revealed in the Word,"
-          verseRef={10}
-        />
-        <Excerpt
-          body=" and that there are some circumstances concerning the worship of God, and government of the church, common to human actions and societies, which are to be ordered by the light of nature and Christian prudence, according to the general rules of the Word, which are always to be observed."
-          verseRef={11}
-        />
+        <Excerpt body=" The whole counsel of God concerning all things necessary for His own glory, man's salvation, faith and life, is either expressly set down or necessarily contained in the Holy Scripture: unto which nothing at any time is to be added, whether by new revelation of the Spirit, or traditions of men." verseRef={9} />
+        <Excerpt body="Nevertheless, we acknowledge the inward illumination of the Spirit of God to be necessary for the saving understanding of such things as are revealed in the Word," verseRef={10} />
+        <Excerpt body=" and that there are some circumstances concerning the worship of God, and government of the church, common to human actions and societies, which are to be ordered by the light of nature and Christian prudence, according to the general rules of the Word, which are always to be observed." verseRef={11} />
       </Text>,
       <Text>
         <BibleVerse verse={"2 Timothy 3:15-17"} verseRef={9} link={"https://biblia.com/bible/esv/2Timothy/3/15-17"} />
@@ -144,10 +123,7 @@ export const ChapterOneData = [
     data: [
       <Text>
         <Excerpt body=" All things in Scripture are not alike plain in themselves, nor alike clear unto all;" verseRef={12} />
-        <Excerpt
-          body=" yet those things which are necessary to be known, believed and observed for salvation, are so clearly propounded and opened in some place of Scripture or other, that not only the learned, but the unlearned, in a due use of ordinary means, may attain to a sufficient understanding of them."
-          verseRef={13}
-        />
+        <Excerpt body=" yet those things which are necessary to be known, believed and observed for salvation, are so clearly propounded and opened in some place of Scripture or other, that not only the learned, but the unlearned, in a due use of ordinary means, may attain to a sufficient understanding of them." verseRef={13} />
       </Text>,
       <Text>
         <BibleVerse verse={"2 Peter 3:16"} verseRef={12} link={"https://biblia.com/bible/esv/2Peter/3/16"} />
@@ -162,20 +138,11 @@ export const ChapterOneData = [
     data: [
       <Text>
         <Excerpt body=" The Old Testament in Hebrew (which was the native language of the people of God of old)," verseRef={14} />
-        <Excerpt
-          body=" and the New Testament in Greek (which at the time of the writing of it was most generally known to the nations), being immediately inspired by God, and by His singular care and providence kept pure in all ages, are therefore authentic; so as in all controversies of religion, the church is finally to appeal to them."
-          verseRef={15}
-        />
-        <Excerpt
-          body=" But because these original tongues are not known to all the people of God, who have a right unto, and interest in the Scriptures, and are commanded in the fear of God to read,"
-          verseRef={16}
-        />
+        <Excerpt body=" and the New Testament in Greek (which at the time of the writing of it was most generally known to the nations), being immediately inspired by God, and by His singular care and providence kept pure in all ages, are therefore authentic; so as in all controversies of religion, the church is finally to appeal to them." verseRef={15} />
+        <Excerpt body=" But because these original tongues are not known to all the people of God, who have a right unto, and interest in the Scriptures, and are commanded in the fear of God to read," verseRef={16} />
         <Excerpt body=" and search them," verseRef={17} />
         <Excerpt body=" therefore they are to be translated into the vulgar language of every nation unto which they come," verseRef={18} />
-        <Excerpt
-          body=" that the Word of God dwelling plentifully in all, they may worship Him in an acceptable manner, and through patience and comfort of the Scriptures may have hope."
-          verseRef={19}
-        />
+        <Excerpt body=" that the Word of God dwelling plentifully in all, they may worship Him in an acceptable manner, and through patience and comfort of the Scriptures may have hope." verseRef={19} />
       </Text>,
       <Text>
         <BibleVerse verse={"Romans 3:2"} verseRef={14} link={"https://biblia.com/bible/esv/Romans/3/2"} />
@@ -191,10 +158,7 @@ export const ChapterOneData = [
   {
     title: 9,
     data: [
-      <Excerpt
-        body=" The infallible rule of interpretation of Scripture is the Scripture itself; and therefore when there is a question about the true and full sense of any Scripture (which is not manifold, but one), it must be searched by other places that speak more clearly."
-        verseRef={20}
-      />,
+      <Excerpt body=" The infallible rule of interpretation of Scripture is the Scripture itself; and therefore when there is a question about the true and full sense of any Scripture (which is not manifold, but one), it must be searched by other places that speak more clearly." verseRef={20} />,
       <Text>
         <BibleVerse verse={"2 Peter 1:20"} verseRef={20} link={"https://biblia.com/bible/esv/2Peter/1/20"} />
         <BibleVerse verse={"Acts 15:15, 16"} verseRef={20} link={"https://biblia.com/bible/esv/Acts/15/15-16"} />
@@ -205,10 +169,7 @@ export const ChapterOneData = [
   {
     title: 10,
     data: [
-      <Excerpt
-        body=" The supreme judge, by which all controversies of religion are to be determined, and all decrees of councils, opinions of ancient writers, doctrines of men, and private spirits, are to be examined, and in whose sentence we are to rest, can be no other but the Holy Scripture delivered by the Spirit, into which Scripture so delivered, our faith is finally resolved."
-        verseRef={21}
-      />,
+      <Excerpt body=" The supreme judge, by which all controversies of religion are to be determined, and all decrees of councils, opinions of ancient writers, doctrines of men, and private spirits, are to be examined, and in whose sentence we are to rest, can be no other but the Holy Scripture delivered by the Spirit, into which Scripture so delivered, our faith is finally resolved." verseRef={21} />,
       <Text>
         <BibleVerse verse={"Matthew 22:29, 31, 32"} verseRef={21} link={"https://biblia.com/bible/esv/Matthew/22/29-32"} />
         <BibleVerse verse={"Ephesians 2:20"} verseRef={21} link={"https://biblia.com/bible/esv/Ephesians/2/20"} />
@@ -234,10 +195,7 @@ export const ChapterTwoData = [
         <Excerpt body=" every way infinite, most holy," verseRef={10} />
         <Excerpt body=" most wise, most free, most absolute; working all things according to the counsel of His own immutable and most righteous will," verseRef={11} />
         <Excerpt body=" for His own glory;" verseRef={12} />
-        <Excerpt
-          body=" most loving, gracious, merciful, long-suffering, abundant in goodness and truth, forgiving iniquity, transgression, and sin; the rewarder of them that diligently seek Him,"
-          verseRef={13}
-        />
+        <Excerpt body=" most loving, gracious, merciful, long-suffering, abundant in goodness and truth, forgiving iniquity, transgression, and sin; the rewarder of them that diligently seek Him," verseRef={13} />
         <Excerpt body=" and withal most just and terrible in His judgments," verseRef={14} />
         <Excerpt body=" hating all sin," verseRef={15} />
         <Excerpt body=" and who will by no means clear the guilty." verseRef={16} />
